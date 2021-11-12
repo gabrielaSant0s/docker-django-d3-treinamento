@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+{% block head_imports %}
+    <script src="{% static 'js/graph.js' %}"></script>
+{% endblock head_imports %}
+
+{% block content%}
+    <input id='serie_x' hidden value="{{serie_x}}"></input>
+    <input id='serie_y' hidden value="{{serie_y}}"></input>
+    <h1>Exemplo</h1>
+    <div id="my_dataviz"></div>   
+{% endblock%}
